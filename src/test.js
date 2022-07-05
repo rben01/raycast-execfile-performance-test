@@ -1,5 +1,4 @@
-const child_process = require("child_process");
-const execFileSync = child_process.execFileSync;
+import { execFileSync } from "child_process";
 
 function Command() {
   const t0_ms = new Date().getTime();

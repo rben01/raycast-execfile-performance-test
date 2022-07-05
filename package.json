@@ -2,10 +2,11 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "test",
   "title": "Test",
-  "description": "",
+  "description": "Debugging poor performance of the first call to child_process's exec family of functions",
   "icon": "command-icon.png",
   "author": "bert",
   "license": "MIT",
+  "type": "module",
   "commands": [
     {
       "name": "test-command",
