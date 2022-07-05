@@ -2,14 +2,14 @@ import { Detail } from "@raycast/api";
 import { execFileSync } from "child_process";
 
 export default function Command() {
-  const t0 = new Date();
+  const t0_ms = new Date().getTime();
   execFileSync("ls");
-  const t1 = new Date();
+  const t1_ms = new Date().getTime();
   execFileSync("ls");
-  const t2 = new Date();
+  const t2_ms = new Date().getTime();
 
-  const elapsed1 = t1.getTime() - t0.getTime();
-  const elapsed2 = t2.getTime() - t1.getTime();
+  const elapsed1 = t1_ms - t0_ms;
+  const elapsed2 = t2_ms - t1_ms;
 
   return (
     <Detail
