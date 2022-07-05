@@ -6,7 +6,6 @@
   "icon": "command-icon.png",
   "author": "bert",
   "license": "MIT",
-  "type": "module",
   "commands": [
     {
       "name": "test-command",
