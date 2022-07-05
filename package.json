@@ -1,0 +1,34 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "test",
+  "title": "Test",
+  "description": "",
+  "icon": "command-icon.png",
+  "author": "bert",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "test-command",
+      "title": "Test command",
+      "description": "",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.37.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
