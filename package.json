@@ -8,9 +8,15 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "test-command",
-      "title": "Test command",
-      "description": "",
+      "name": "test-command-sync",
+      "title": "Test command (sync)",
+      "description": "`execFileSync`, four times",
+      "mode": "view"
+    },
+    {
+      "name": "test-command-async",
+      "title": "Test command (async)",
+      "description": "`execFile`, with each call scheduled serially via a callback, four times",
       "mode": "view"
     }
   ],
@@ -22,6 +28,7 @@
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.5.1",
     "typescript": "^4.4.3"
   },
